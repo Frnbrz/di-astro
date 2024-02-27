@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='React' description='Pagina de inicio de astro'>
+  <p class='mb-4'>
+    Astro permite la integración con React de manera sencilla. Puedes importar
+    componentes de React directamente en archivos .astro.
+  </p>
+
+  <img src='/react.jpg' alt='React' class='w-32 h-32 mb-4' />
+
+  <h2 class='text-3xl font-bold mb-2'>Instalación</h2>
+  <p class='mb-4'>
+    Para empezar a usar React en Astro, necesitas instalar algunas dependencias:
+  </p>
+  <pre><code class="p-2 bg-gray-200 rounded">npm install react react-dom</code></pre>
+
+  <h2 class='text-3xl font-bold mb-2'>Uso</h2>
+  <p class='mb-4'>
+    Una vez instaladas las dependencias, puedes importar y usar tus componentes
+    de React en Astro de la siguiente manera:
+  </p>
+  <pre><code class="p-2 bg-gray-200 rounded">import MiComponente from '../path/to/MiComponente.jsx'</code></pre>
+
+  <h2 class='text-3xl font-bold mb-2'>Renderizado en el servidor</h2>
+  <p class='mb-4'>
+    Astro utiliza el renderizado en el servidor (SSR) por defecto para todos los
+    componentes de React.
+  </p>
+
+  <h2 class='text-3xl font-bold mb-2'>Renderizado en el cliente</h2>
+  <p class='mb-4'>
+    Si prefieres renderizar un componente en el cliente, puedes usar la
+    directiva :client-only de Astro.
+  </p>
+  <a
+    href='https://docs.astro.build/es/guides/integrations-guide/react/'
+    target='_blank'
+    rel='noopener noreferrer'
+    class='inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-600 transition duration-150 ease-in-out'
+  >
+    Documentación de Astro
+  </a>
+</Layout>

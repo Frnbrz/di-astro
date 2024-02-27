@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='Tailwind' description='Pagina de inicio de astro'>
+  <p class='mt-4 text-center text-2xl'>
+    Tailwind CSS es un marco de utilidad de bajo nivel que le permite construir
+    diseños personalizados directamente en su marcado en lugar de diseñar dentro
+    de las restricciones de un sistema de componentes predefinido.
+  </p>
+  <img class='mt-4 mx-auto' src='/tailwind.png' alt='Tailwind CSS Logo' />
+  <p class='mt-4 text-center text-2xl'>
+    Astro es un renderizador de front-end que le permite construir sitios web
+    más rápidos con menos JavaScript. Astro permite utilizar cualquier marco de
+    JavaScript moderno (como React, Vue, Svelte, Preact, etc.) y luego
+    renderizar su interfaz de usuario a HTML estático en el momento de la
+    construcción.
+  </p>
+  <img class='mt-4 mx-auto' src='/astroTailwind.png' alt='Astro Logo' />
+  <p class='mt-4 text-center text-2xl mb-10'>
+    Juntos, Astro y Tailwind CSS pueden ayudarlo a construir sitios web
+    increíblemente rápidos y personalizables.
+  </p>
+
+  <a
+    class='bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-600 transition duration-150 ease-in-out'
+    target='_blank'
+    href='https://docs.astro.build/es/guides/integrations-guide/tailwind/'
+  >
+    Docs Integración de Astro
+  </a>
+</Layout>

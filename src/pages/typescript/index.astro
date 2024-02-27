@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='TypeScript' description='Pagina de inicio de astro'>
+  <h1>Guía de TypeScript en Astro</h1>
+  <p class='text-lg mb-8'>
+    Astro soporta TypeScript en todos los archivos .astro y .ts. Para habilitar
+    TypeScript en tu proyecto Astro, simplemente comienza a escribir TypeScript.
+  </p>
+  <img src='/typescript.png' alt='Astro TypeScript' />
+  <p class='text-lg mb-8'>
+    No necesitas un archivo tsconfig.json, pero Astro puede aprovechar uno si
+    existe. Astro no compila tu TypeScript, eso lo deja a tu herramienta de
+    construcción como Snowpack o Vite.
+  </p>
+  <p class='text-lg mb-8'>
+    Si estás utilizando componentes de terceros escritos en TypeScript, querrás
+    tener un archivo tsconfig.json en tu proyecto para incluir esos tipos en tu
+    compilación.
+  </p>
+
+  <a
+    href='https://docs.astro.build/es/guides/typescript/'
+    target='_blank'
+    rel='noopener noreferrer'
+    class='bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-600 transition duration-150 ease-in-out'
+  >
+    Documentación Astro TypeScript
+  </a>
+</Layout>

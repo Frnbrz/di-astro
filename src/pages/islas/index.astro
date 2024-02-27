@@ -1,0 +1,34 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='Islas de Astro' description='Pagina de inicio de astro'>
+  <p class='mb-4'>
+    Las Islas de Astro son una nueva arquitectura para la construcción de sitios
+    web más rápidos. Permiten enviar HTML estático y mínimo al navegador, y
+    luego rehidratar solo las partes interactivas con JavaScript.
+  </p>
+
+  <img src='/islas.jpg' alt='Astro' class='mb-4' />
+
+  <p class='mb-4'>
+    Esto permite a los desarrolladores construir sitios web rápidos y altamente
+    interactivos, sin sacrificar la experiencia del usuario o la capacidad de
+    respuesta del sitio.
+  </p>
+
+  <p class='mb-4'>
+    Las Islas de Astro se basan en el concepto de "Islas de JavaScript", que es
+    una técnica de desarrollo web que implica dividir una página web en pequeñas
+    "islas" de funcionalidad que se cargan y se ejecutan de forma independiente.
+  </p>
+
+  <a
+    href='https://docs.astro.build/es/concepts/islands/'
+    target='_blank'
+    rel='noopener noreferrer'
+    class='bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-600 transition duration-150 ease-in-out'
+  >
+    Documentación de Astro
+  </a>
+</Layout>

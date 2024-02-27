@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout title='Routing' description='Pagina de inicio de astro'>
+  <p class='mb-4'>
+    Astro tiene un sistema de routing simple e intuitivo que se basa en la
+    estructura de archivos del proyecto.
+  </p>
+
+  <img
+    src='/routing.png'
+    alt='Ejemplo de estructura de archivos de Astro'
+    class='w-full rounded-lg shadow-lg mb-4'
+  />
+
+  <h2>Rutas estáticas</h2>
+
+  <p class='mb-4'>
+    Las páginas de Astro se definen como archivos <code>.astro</code> o <code
+      >.md</code
+    > en el directorio <code>src/pages</code>. La ruta de cada página se
+    corresponde con su nombre de archivo y su ubicación dentro del directorio <code
+      >src/pages</code
+    >.
+  </p>
+
+  <h3>Ejemplo</h3>
+
+  <pre>
+  src/pages/
+  ├── index.astro
+  └── about.md
+  </pre>
+
+  <p class='mb-4'>En este ejemplo, las dos rutas disponibles son:</p>
+  <ul>
+    <li><code>/</code> (servida por <code>index.astro</code>)</li>
+    <li><code>/about</code> (servida por <code>about.md</code>)</li>
+  </ul>
+
+  <h2>Rutas dinámicas</h2>
+
+  <p class='mb-4'>
+    Astro también permite crear rutas dinámicas utilizando paréntesis en los
+    nombres de archivo.
+  </p>
+
+  <h3>Ejemplo</h3>
+
+  <pre>
+  src/pages/
+  ├── [id].astro
+  └── blog/[slug].astro
+  </pre>
+
+  <p class='mb-4'>En este ejemplo, las dos rutas disponibles son:</p>
+  <ul>
+    <li>
+      <code>/123</code> (servida por <code>[id].astro</code> con el parámetro <code
+        >id</code
+      > establecido en "123")
+    </li>
+    <li>
+      <code>/blog/mi-articulo</code> (servida por <code>[slug].astro</code> con el
+      parámetro <code>slug</code> establecido en "mi-articulo")
+    </li>
+  </ul>
+
+  <h2>Redirecciones</h2>
+
+  <p class='mb-4'>
+    Astro también permite realizar redirecciones desde una ruta a otra.
+  </p>
+
+  <a
+    href='https://docs.astro.build/en/guides/routing/'
+    target='_blank'
+    rel='noopener noreferrer'
+    class='bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline hover:bg-blue-600 transition duration-150 ease-in-out'
+  >
+    Documentación de Routing en Astro
+  </a>
+</Layout>
